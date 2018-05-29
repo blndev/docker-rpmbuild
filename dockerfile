@@ -1,6 +1,7 @@
 FROM centos:7
 LABEL maintainer="blndev"
 
+RUN yum install epel-release -y
 RUN yum install -y \
 	gcc \
 	make \
@@ -12,8 +13,8 @@ RUN yum install -y \
 
 #RUN pip install ....
 
-VOLUME [ "/tmp/rpm" ]
+#VOLUME [ "/tmp/rpm" ]
 WORKDIR /tmp/rpm
 
-ENTRYPOINT [ "/usr/local/bin/..." ]
+ENTRYPOINT [ "/bin/bash" ]
 CMD [ "--help" ]
