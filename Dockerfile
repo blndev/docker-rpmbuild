@@ -8,6 +8,7 @@ RUN yum install -y \
 	python-devel \
     python-setuptools \
     python-pip \
+    pytest \
 	rpm-build \
 	rpm-sign && yum clean all
 
