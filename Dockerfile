@@ -16,5 +16,4 @@ RUN yum install -y \
 #VOLUME [ "/tmp/rpm" ]
 WORKDIR /tmp/rpm
 
-ENTRYPOINT [ "/bin/bash" ]
-CMD [ "--help" ]
+CMD ["/bin/bash"]
